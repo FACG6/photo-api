@@ -1,0 +1,26 @@
+{
+  "name": "photo-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FACG6/photo-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FACG6/photo-api/issues"
+  },
+  "homepage": "https://github.com/FACG6/photo-api#readme",
+  "devDependencies": {
+    "tap": "^12.5.1"
+  }
+}
