@@ -22,5 +22,9 @@
   "homepage": "https://github.com/FACG6/photo-api#readme",
   "devDependencies": {
     "tap": "^12.5.1"
+  },
+  "dependencies": {
+    "env2": "^2.2.2",
+    "request": "^2.88.0"
   }
 }
