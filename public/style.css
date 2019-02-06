@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    padding: 14px 5px 22px -9px;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+.header{
+    text-shadow: -1px 0 #400b0b, 3px 1px rgba(195, 40, 40, 0.2);
+    width: 100%;
+    text-align: center;
+}
+.input{
+    width: 51%;
+    font-size: 128%;
+    color: #352e2e;
+    padding-left: 2%;
+    font-family: "Noto Sans KR";
+    border-radius: 61px;
+    border: black solid;
+    flex: 5;
+}
+.btn{
+    font-family: "Noto Sans KR";
+    font-weight: bold;
+    width: 21%;
+    font-size: 20px;
+    color: black;
+    background: white;
+    border: black solid;
+    border-radius: 38px;
+    font-size: inherit;
+    flex: 1;
+    height: 100%;
+    padding-top: 5px;
+}
