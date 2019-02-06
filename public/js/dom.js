@@ -9,6 +9,9 @@ searchBtn.addEventListener('click', (e) => {
         const newValue = searchText.value;
         request('/search', 'POST', newValue, (error, response) => {
             if (error) {
+                response.writeHead(404, {"content-Type":"html/text"});
+                response.end('error')
+
             } else {
                 const result = JSON.parse(response);
                 result.data.forEach(element => {

@@ -9,7 +9,8 @@ function accessData(callback) {
             callback(response);
         } else
              {
-                console.log('ERROR')
+                response.writeHead(404, {"content-Type":"html/text"});
+                response.end('error')
             }
 
     }

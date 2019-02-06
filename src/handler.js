@@ -48,8 +48,11 @@ const handelSearch = (request, response) => {
     let allData = "";
     request.on('data', (chank) => {
         allData += chank;
+
     })
     request.on('end', () => {
+        // console.log(allData);
+        
         const options = {
             method: "GET",
             url: `http://api.giphy.com/v1/gifs/search?q=${allData}&api_key=${apiKeyGiphy}&limit=4`
@@ -60,7 +63,7 @@ const handelSearch = (request, response) => {
                 response.end('<h1>not found</h1>')
             } else {
                 response.writeHead(200, { "content-type": "application/json" });
-                console.log(JSON.parse(body));
+                // console.log(JSON.parse(body));
                 response.end(JSON.stringify(body));
             }
         })
