@@ -12,6 +12,7 @@ const request = (url, method, value, cb) => {
         }
       } else {
         cb(new TypeError('Error'));
+        
       }
     }
   };
