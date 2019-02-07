@@ -12,6 +12,7 @@ searchBtn.addEventListener('click', () => {
   if (searchText.value !== '') {
     const newValue = searchText.value;
 
+    // eslint-disable-next-line no-undef
     request('/search', 'POST', newValue, (error, response) => {
       if (error) {
         console.log(new Error('Error'));
