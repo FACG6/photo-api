@@ -69,10 +69,13 @@ const handelSearch = (request, response) => {
 const pageNotFound = (request, response) => {
   const pathFile = path.join(__dirname, '..', 'puplic', 'notfound.html');
 
-  fs.readFile(pathFile, (error) => {
+  fs.readFile(pathFile, (error, file) => {
     if (error) {
+      response.writeHead(500, { 'content-type': 'text/html' });
+      response.end('<h1>server Not Found </h1>');
+    } else {
       response.writeHead(404, { 'content-type': 'text/html' });
-      response.end('<h1>Page Not Found </h1>');
+      response.end(file);
     }
   });
 };
